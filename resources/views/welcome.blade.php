@@ -1,13 +1,13 @@
-@extends('layouts.app')
 
-@section('page-title', 'Home')
 
-@section('main-content')
 <h1>
-    Laravel Start 1
+   film
 </h1>
 
-<h2>
-    Ciao {{ $firstName }} {{ $lastName }}
-</h2>
-@endsection
+<p>
+   @foreach ( $movies as $movie)
+        title:{{$movie->title}}
+        
+   @endforeach
+</p>
+
